@@ -37,6 +37,10 @@
         .textPrimary {
             color: rgba(0, 0, 0, 0.5);
         }
+
+        /* @media screen {
+            
+        } */
     </style>
 </head>
 
@@ -44,28 +48,31 @@
     <header>
 
         <!-- navBar -->
-        <nav class="flex items-center justify-between mx-36 mt-8">
-            <img src="./assets/logo.png" alt="">
-            <ul class="inter flex items-center space-x-6 textPrimary font-bold">
+        <nav class="flex items-center justify-between lg:flex lg:items-center lg:justify-between mx-2 px-2 lg:mx-36 mt-8">
+            <img class="w-24 lg:w-32" src="./assets/logo.png" alt="">
+            <ul class="inter textPrimary  hidden lg:flex items-center space-x-6 font-bold">
                 <li><a href="" class="hover:text-black">Home</a></li>
                 <li><a href="" class="hover:text-black">Shop</a></li>
                 <li><a href="" class="hover:text-black">About Us</a></li>
                 <li><a href="" class="hover:text-black"><i class="fa-solid fa-cart-arrow-down"></i> Cart($56)</a></li>
             </ul>
+            <div class="flex items-center list-none font-bold lg:hidden textPrimary">
+                <li><a href="" class="inter hover:text-black"><i class="fa-solid fa-cart-arrow-down"></i> Cart($56)</a></li>
+            </div>
         </nav>
 
         <!-- banner section -->
-        <div class="flex items-end mx-36 my-28 pt-24">
+        <div class="flex flex-col-reverse lg:flex lg:flex-row  lg:items-end lg:mx-36 lg:my-28 mx-2 my-5 pt-3 lg:pt-24">
 
-            <div class="w-[50%]">
-                <h3 class="notoSerif font-bold text-6xl">Always <span class="text-[#E95A08]">Fresh Flower</span></h3>
+            <div class="w-full lg:w-[50%]">
+                <h3 class="notoSerif text-2xl font-bold lg:text-6xl">Always <span class="text-[#E95A08]">Fresh <br> Flower</span></h3>
                 <p class="textPrimary inter">Indulge your senses with the beauty and fragrance of our fresh
                     flower shop. From classic roses to
                     exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
                 </p>
             </div>
 
-            <div>
+            <div class="mb-8 lg:mb-0">
                 <img src="./assets/hero-flower.png" alt="">
             </div>
 
