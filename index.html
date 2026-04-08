@@ -5,13 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
-    <link rel="stylesheet" href="./style.config.js">
+
     <!-- tailwind link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f668b39ff0.js" crossorigin="anonymous"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .notoSerif {
+            font-family: "Noto Serif", serif;
+            font-optical-sizing: auto;
+            /* font-weight: <weight>; */
+            font-style: normal;
+        }
+
+        .inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            /* font-weight: <weight>; */
+            font-style: normal;
+        }
+
+        .textPrimary {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 
 <body>
-    <header class="">
+    <header>
+
+        <!-- navBar -->
+        <nav class="flex items-center justify-between mx-36 mt-8">
+            <img src="./assets/logo.png" alt="">
+            <ul class="inter flex items-center space-x-6 textPrimary font-bold">
+                <li><a href="" class="hover:text-black">Home</a></li>
+                <li><a href="" class="hover:text-black">Shop</a></li>
+                <li><a href="" class="hover:text-black">About Us</a></li>
+                <li><a href="" class="hover:text-black"><i class="fa-solid fa-cart-arrow-down"></i> Cart($56)</a></li>
+            </ul>
+        </nav>
+
+        <!-- banner section -->
+        <div class="flex items-end mx-36 my-28 pt-24">
+
+            <div class="w-[50%]">
+                <h3 class="notoSerif font-bold text-6xl">Always <span class="text-[#E95A08]">Fresh Flower</span></h3>
+                <p class="textPrimary inter">Indulge your senses with the beauty and fragrance of our fresh
+                    flower shop. From classic roses to
+                    exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+                </p>
+            </div>
+
+            <div>
+                <img src="./assets/hero-flower.png" alt="">
+            </div>
+
+        </div>
 
     </header>
 
